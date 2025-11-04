@@ -477,16 +477,17 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     
     <script>
-        // === REPLACE THIS WITH YOUR FIREBASE CONFIG ===
+        // Firebase Configuration
         const firebaseConfig = {
-            apiKey: "YOUR_API_KEY_HERE",
-            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_PROJECT_ID.appspot.com",
-            messagingSenderId: "YOUR_SENDER_ID",
-            appId: "YOUR_APP_ID"
+            apiKey: "AIzaSyBnPD7v-8IGqrYepC2RvJDJRS2gFFvl2f8",
+            authDomain: "student-database-e3f5c.firebaseapp.com",
+            databaseURL: "https://student-database-e3f5c.firebaseio.com",
+            projectId: "student-database-e3f5c",
+            storageBucket: "student-database-e3f5c.firebasestorage.app",
+            messagingSenderId: "502335602197",
+            appId: "1:502335602197:web:7eea29a2b2402d98e1d81c",
+            measurementId: "G-DD9RHLS83Z"
         };
-        // === END OF FIREBASE CONFIG ===
         
         // App State
         let currentUser = null;
@@ -657,7 +658,6 @@
             } catch (error) {
                 console.error("Firebase initialization error: ", error);
                 firebaseInitialized = false;
-                alert("Firebase initialization failed. Please check your configuration.");
             }
         }
 
